@@ -1,0 +1,133 @@
+body {
+  background-color: cyan;
+}
+
+.full_container {
+  height: 700px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* number {
+  position: absolute;
+  color: yellow;
+  font-size: 24px;
+  text-shadow: 0 0 10px yellow;
+}
+
+.number12 { top: 10px; left: 50%; transform: translateX(-50%); }
+.number3  { right: 10px; top: 50%; transform: translateY(-50%); }
+.number6  { bottom: 10px; left: 50%; transform: translateX(-50%); }
+.number9  { left: 10px; top: 50%; transform: translateY(-50%); } */
+
+.container {
+  height: 500px;
+  width: 420px;
+}
+
+.analog {
+  /* background-image: url('clock.jpg'); */
+  background-position: center;
+  background-size: cover;
+  height: 400px;
+  width: 400px;
+  border: 1px solid black;
+  border-radius: 50%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 1px 16px 7px red;
+}
+
+.number {
+  position: absolute;
+  color: black;
+  font-size: 40px;
+  text-shadow: 0 0 10px blue;
+}
+
+.number12 { top: 10px; left: 50%; transform: translateX(-50%); }
+.number3  { right: 10px; top: 50%; transform: translateY(-50%); }
+.number6  { bottom: 10px; left: 50%; transform: translateX(-50%); }
+.number9  { left: 10px; top: 50%; transform: translateY(-50%); }
+
+#hour,
+#minute,
+#second {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform-origin: left center;
+  transform: rotate(0deg);
+  display: flex;
+  align-items: center;
+}
+
+#hour {
+  width: 180px;
+  z-index: 4;
+}
+
+#minute {
+  width: 230px;
+  z-index: 5;
+}
+
+#second {
+  width: 280px;
+  z-index: 6;
+}
+
+.center_dot {
+  height: 20px;
+  width: 20px;
+  background-color: black;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 0px 0px 5px 2px gray;
+}
+
+.sign {
+  height: 20px;
+  width: 20px;
+  background-color: gold;
+  border-radius: 50%;
+  box-shadow: 1px 1px 14px 3px red;
+}
+
+.sign_stick_hour {
+  width: 50%;
+  height: 3px;
+  background-color: white;
+  border-radius: 50px;
+  box-shadow: 2px 0px 5px 1px blue;
+}
+
+.sign_stick_minute {
+  width: 50%;
+  height: 3px;
+  background-color: white;
+  border-radius: 50px;
+  box-shadow: 2px 0px 5px 1px blue;
+}
+
+.sign_stick_second {
+  width: 50%;
+  height: 2px;
+  background-color: red;
+  border-radius: 50px;
+  box-shadow: 2px 0px 5px 1px blue;
+}
+
+#digital {
+  color: black;
+  text-shadow: 1px 1px 1px black;
+  margin-top: 40px;
+  font-size: 35px;
+  text-align: center;
+}
